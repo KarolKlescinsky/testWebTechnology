@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+
+<meta charset="UTF-8">
+<title>Dubnické opálové baňe</title>
+<link rel="stylesheet" href="Css.css" />
+<link rel="stylesheet" href="Css.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="Web.html">Home</a></li>
+			<li><a href="Web_opal.html">Opál</a></li>
+			<li><a href="Web_bat.html">Netopiere</a></li>
+			<li><a href="Web_weather.html">Pocasie</a></li>
+			<li><a href="Web_formular.html">Formulár</a></li>
+			<li><a href="Web_contact.html">Kontakt</a></li>
+		</ul>
+	</header>
+	<section>
+		<h1>Momentálna predpoveď počasia:</h1>
+		<div id="pocasie"></div>
+
+		<h1>Predpoveď počasia na najbližšiu dobu:</h1>
+		<div id="pocasieLong"></div>
+	</section>
+
+
+	<footer class="myFooter">
+		<p>Karol Klescinsky, (c) 2016</p>
+		<p>
+			<a href="#top">Späť na vrch.</a>
+		</p>
+	</footer>
+
+
+	<!-- Vlozenie jQuery -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		window.jQuery
+				|| document.write('<script src="jquery.min.js"><\/script>')
+	</script>
+	<!-- Vlozenie Mustache -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+	<script>
+		window.Mustache
+				|| document.write('<script src="mustache.min.js"><\/script>')
+	</script>
+	<!-- Vlozenie skriptu pre tuto stranku  -->
+	<!--
+<script src="js/04TodoList1zaklad.js"></script>
+-->
+	<!--
+<script src="js/04TodoList2addRemove.js"></script>
+-->
+	<script src="Web_javascript.js"></script>
+
+</body>
+</html>

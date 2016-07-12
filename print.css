@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+html {
+    text-align: justify; 
+}
+
+body {
+	margin:0;
+	padding:20px;
+	margin-top:30px;
+	background-color:#1abc9c;
+	height:1500px;
+	}
+	
+	@media print {
+  img {
+    display: none !important;
+  }
+
+  * {
+    background-image: none !important;
+  }
+}
+
+@media print {
+  #frmArt {
+    display: none !important;
+  }
+}
+
+@media print {
+  li {
+    display: none !important;
+  }
+}
+

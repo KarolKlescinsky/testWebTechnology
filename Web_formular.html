@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+
+<meta charset="UTF-8">
+<title>Dubnické opálové baňe</title>
+<link rel="stylesheet" href="Css.css" />
+<link rel="stylesheet" href="Css.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="Web.html">Home</a></li>
+			<li><a href="Web_opal.html">Opál</a></li>
+			<li><a href="Web_bat.html">Netopiere</a></li>
+			<li><a href="Web_weather.html">Pocasie</a></li>
+			<li><a href="Web_formular.html">Formulár</a></li>
+			<li><a href="Web_contact.html">Kontakt</a></li>
+		</ul>
+	</header>
+	<section>
+		<h1>Dotaznik</h1>
+
+		<form id="frmArt" method="post" action="badProcessing.html">
+			<label for="author">Autor:</label><br> <input type="text"
+				name="author" id="author" size="50" maxlength="100"
+				pattern="\S[\S\s]*" required title="Meno autora." /> <br> <label
+				for="title">Názov článku:</label><br> <input type="text"
+				name="title" id="title" size="50" maxlength="100"
+				pattern="\S[\S\s]*" required
+				title="Názov článku. Povinná položka. Maximálna dĺžka: 100 znakov. Prvý znak nesmie byť medzera."
+				placeholder="napr. Môj prvý príbeh" /> <br> <label
+				for="content">Text článku:</label><br>
+			<textarea name="content" id="content" spellcheck="true" lang="sk"
+				cols="52" rows="10" required
+				title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."></textarea>
+			<br>
+			<br>
+			<br> <label for="status3">Boli ste v opalovych baniach?</label><br>
+			<input type="radio" id="status3" name="status" value="3" checked />
+			<label for="status3">Ano</label><br> <input type="radio"
+				id="status2" name="status" value="2" /> <label for="status2">Nie</label><br>
+			<input type="radio" id="status1" name="status" value="1" /> <label
+				for="status1">Chystam sa.</label><br> <input type="radio"
+				id="status" name="status" value="0" /> <label for="status0">Nechystam
+				sa.</label><br> <br> <br> <label for="inovacia1">Aku
+				inováciu by ste v danom regióne prijali?</label><br> <input
+				type="checkbox" id="inovacia1" name="inovaciaR" /> <label
+				for="inovacia1">Reštauráciu</label><br> <input type="checkbox"
+				id="inovacia2" name="inovaciaK" /> <label for="inovacia2">Kúpalisko</label><br>
+			<input type="checkbox" id="inovacia3" name="inovaciaP" /> <label
+				for="inovacia3">Pumpu</label><br> <input type="checkbox"
+				id="inovacia4" name="inovaciaL" /> <label for="inovacia4">Lepšiu
+				cestu</label><br> <br> <br> <label for="oblubeneElm">Mám
+				rád:</label> <br> <select id="oblubeneElm" name="oblubene" size="3"
+				multiple>
+				<option value="drahy">Drahý opál</option>
+				<option value="mliecny">Sklenný opál</option>
+				<option value="sklenny">Mliečny opál</option>
+				<option value="ziadny">Nemam rad opal</option>
+			</select> <br> <br> <label for="pohlavie">Pohlavie:</label> <select
+				id="pohlavie" name="pohlavie" size="1">
+				<option value="m">muž</option>
+				<option value="f">žena</option>
+				<option value="x">neviem</option>
+				<option value="o" selected>nepoviem</option>
+			</select>
+			<br><br>
+			<button type="submit">Ulož článok</button>
+			
+
+		</form>
+	</section>
+	<!-- Vlozenie jQuery -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="../revealJs/js/jquery.min.js"><\/script>')
+	</script>
+		<!-- Vlozenie Mustache -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+	<script>
+		window.Mustache
+				|| document.write('<script src="mustache.min.js"><\/script>')
+	</script>
+
+	<!-- Vlozenie skriptu tohto dokumentu -->
+	<script src="Web_javascript.js"></script>
+
+	<footer class="myFooter">
+		<p>Karol Klescinsky, (c) 2016</p>
+		<p>
+			<a href="#top">Späť na vrch.</a>
+		</p>
+	</footer>
+
+</body>
+</html>
